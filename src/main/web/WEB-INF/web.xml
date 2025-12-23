@@ -1,0 +1,83 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         version="3.1"
+         metadata-complete="true">
+
+    <servlet>
+        <servlet-name>PhongTroServlet</servlet-name>
+        <servlet-class>controller.PhongTroServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <web-app>
+    <listener>
+        <listener-class>controller.PhongTroServlet</listener-class>
+    </listener>
+</web-app>
+
+    <servlet-mapping>
+        <servlet-name>PhongTroServlet</servlet-name>
+        <url-pattern>/phongtro</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>NguoiDungServlet</servlet-name>
+        <servlet-class>controller.NguoiDungServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NguoiDungServlet</servlet-name>
+        <url-pattern>/nguoidung</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HopDongServlet</servlet-name>
+        <servlet-class>controller.HopDongServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HopDongServlet</servlet-name>
+        <url-pattern>/hopdong</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HoaDonServlet</servlet-name>
+        <servlet-class>controller.HoaDonServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HoaDonServlet</servlet-name>
+        <url-pattern>/hoadon</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ThongBaoServlet</servlet-name>
+        <servlet-class>controller.ThongBaoServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ThongBaoServlet</servlet-name>
+        <url-pattern>/thongbao</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TinNhanServlet</servlet-name>
+        <servlet-class>controller.TinNhanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TinNhanServlet</servlet-name>
+        <url-pattern>/tinnhan</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>pages/trangchu.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet>
+        <servlet-name>BaiTapServlet</servlet-name>
+        <servlet-class>controller.BaiTapServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BaiTapServlet</servlet-name>
+        <url-pattern>/home</url-pattern>
+    </servlet-mapping>
+</web-app>
